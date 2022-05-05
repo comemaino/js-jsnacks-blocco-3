@@ -5,9 +5,9 @@ const numbers = [];
 let sum = 0;
 
 while (sum < 50) {
-  userNumber = parseInt(prompt("dimmi un numero 1"));
+  userNumber = parseInt(prompt("dimmi un numero"));
   numbers.push(userNumber);
   console.log(numbers);
-  sum = sum + userNumber;
+  sum += userNumber;
 }
 console.log(sum);

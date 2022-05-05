@@ -15,14 +15,12 @@ for (let i = 0; i < numbers.length; i++) {
 console.log(even, odd);
 
 const red = document.createElement("div");
-red.id = "red-div";
-red.classList.add("red");
-console.log(red);
+red.id = "red";
 red.innerHTML = odd;
+console.log(red);
 
 const green = document.createElement("div");
-green.id = "green-div";
-green.classList.add("green");
+green.id = "green";
 green.innerHTML = even;
 console.log(green);
 

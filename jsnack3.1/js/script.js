@@ -27,3 +27,21 @@ while (shortestArr.length < longestArr.length) {
 }
 
 console.log(arrays);
+
+//CORREZIONE
+let shortArr;
+
+if (arr1.length > arr2.length) {
+  shortArr = arr2;
+} else {
+  shortArr = arr1;
+}
+
+while (arr1.length !== arr2.length) {
+  const rndNumber = getRndInteger(1, 9);
+  shortArr.push(rndNumber);
+}
+
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}

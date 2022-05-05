@@ -30,3 +30,17 @@ for (let i = 0; i < teams.length; i++) {
     console.log(thisElement);
   }
 }
+
+teams.forEach((team) => {
+  const rndGoal = getRndInteger(0, 100);
+  const rndFalli = getRndInteger(0, 100);
+
+  team.goal = rndGoal;
+  team.falli = rndFalli;
+});
+
+console.log(teams);
+
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
